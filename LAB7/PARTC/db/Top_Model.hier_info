@@ -1,0 +1,145 @@
+|Top_Model
+in1 => counter:CC1.clock
+in1 => y.IN1
+in2 => counter:CC1.reset
+in2 => counter:CC2.reset
+in3 => counter:CC1.direction
+in3 => counter:CC2.direction
+ledR[0] << sevseg:CC0.seven_seg[0]
+ledR[1] << sevseg:CC0.seven_seg[1]
+ledR[2] << sevseg:CC0.seven_seg[2]
+ledR[3] << sevseg:CC0.seven_seg[3]
+ledR[4] << sevseg:CC0.seven_seg[4]
+ledR[5] << sevseg:CC0.seven_seg[5]
+ledR[6] << sevseg:CC0.seven_seg[6]
+ledR2[0] << sevseg:CC3.seven_seg[0]
+ledR2[1] << sevseg:CC3.seven_seg[1]
+ledR2[2] << sevseg:CC3.seven_seg[2]
+ledR2[3] << sevseg:CC3.seven_seg[3]
+ledR2[4] << sevseg:CC3.seven_seg[4]
+ledR2[5] << sevseg:CC3.seven_seg[5]
+ledR2[6] << sevseg:CC3.seven_seg[6]
+
+
+|Top_Model|sevseg:CC0
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+seven_seg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_Model|counter:CC1
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+reset => temp[0].ACLR
+reset => temp[1].ACLR
+reset => temp[2].ACLR
+reset => temp[3].ACLR
+direction => temp[0].OUTPUTSELECT
+direction => temp[1].OUTPUTSELECT
+direction => temp[2].OUTPUTSELECT
+direction => temp[3].OUTPUTSELECT
+direction => temp[0].OUTPUTSELECT
+direction => temp[1].OUTPUTSELECT
+direction => temp[2].OUTPUTSELECT
+direction => temp[3].OUTPUTSELECT
+digit[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+digit[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+digit[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+digit[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_Model|counter:CC2
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => temp[3].CLK
+reset => temp[0].ACLR
+reset => temp[1].ACLR
+reset => temp[2].ACLR
+reset => temp[3].ACLR
+direction => temp[0].OUTPUTSELECT
+direction => temp[1].OUTPUTSELECT
+direction => temp[2].OUTPUTSELECT
+direction => temp[3].OUTPUTSELECT
+direction => temp[0].OUTPUTSELECT
+direction => temp[1].OUTPUTSELECT
+direction => temp[2].OUTPUTSELECT
+direction => temp[3].OUTPUTSELECT
+digit[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+digit[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+digit[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+digit[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top_Model|sevseg:CC3
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+seven_seg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seven_seg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

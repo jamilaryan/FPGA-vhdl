@@ -1,0 +1,36 @@
+# do CounterWithRegister.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:13:31 on Dec 09,2015
+# vlog -work work CounterWithRegister.vo 
+# -- Compiling module CounterWithRegister
+# 
+# Top level modules:
+# 	CounterWithRegister
+# End time: 18:13:31 on Dec 09,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:13:31 on Dec 09,2015
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module CounterWithRegister_vlg_sample_tst
+# -- Compiling module CounterWithRegister_vlg_check_tst
+# -- Compiling module CounterWithRegister_vlg_vec_tst
+# 
+# Top level modules:
+# 	CounterWithRegister_vlg_vec_tst
+# End time: 18:13:31 on Dec 09,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "CounterWithRegister.do" 
+# Start time: 18:13:31 on Dec 09,2015
+# Loading work.CounterWithRegister_vlg_vec_tst
+# Loading work.CounterWithRegister
+# Loading altera_ver.dffeas
+# Loading work.CounterWithRegister_vlg_sample_tst
+# Loading work.CounterWithRegister_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(204)
+#    Time: 1 us  Iteration: 0  Instance: /CounterWithRegister_vlg_vec_tst/tb_out
+# End time: 18:13:31 on Dec 09,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

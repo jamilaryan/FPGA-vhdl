@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+ENTITY top_model IS
+		PORT ( in0 :IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+				in1  :IN BIT;
+				in2  :IN BIT;
+				in3  :IN BIT;
+		ledR :OUT STD_LOGIC_VECTOR (6 DOWNTO 0));
+END ENTITY;
+
+
+ARCHITECTURE struct OF Top_Model IS
+		SIGNAL sig :STD_LOGIC_VECTOR (3 DOWNTO 0); --intermediate signal
+		
+		COMPONENT sevseg IS -- component declaration
+			PORT ( bcd     : IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+					y 			:OUT STD_LOGIC_VECTOR (6 DOWNTO 0));
+		END COMPONENT;
+		
+		COMPONENT counter IS -- component declaration
+			PORT( clock	:IN std_logic;
+			reset :IN std_logic;
+			direction:IN std_logic;
+			digit	:OUT natural range 0 to 9);
+		END COMPONENT;
+BEGIN
+-- components instantiations
+	CC0:sevseg PORT MAP(sig, ledR);
+	CC1:counter PORT MAP(in1, in2, in3, sig);
+END ARCHITECTURE;

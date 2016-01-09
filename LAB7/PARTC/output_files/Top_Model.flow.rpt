@@ -1,0 +1,143 @@
+Flow report for Top_Model
+Wed Dec 09 18:13:14 2015
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Wed Dec 09 18:13:14 2015       ;
+; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Full Version ;
+; Revision Name                   ; Top_Model                                   ;
+; Top-level Entity Name           ; top_model                                   ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 12 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 9                                           ;
+; Total pins                      ; 17 / 457 ( 4 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/09/2015 18:09:31 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Top_Model           ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 123509614039674.144970257000120 ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 756 MB              ; 00:00:24                           ;
+; Fitter                    ; 00:00:53     ; 1.5                     ; 2412 MB             ; 00:00:53                           ;
+; Assembler                 ; 00:00:17     ; 1.0                     ; 740 MB              ; 00:00:11                           ;
+; TimeQuest Timing Analyzer ; 00:00:14     ; 1.0                     ; 1062 MB             ; 00:00:07                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 652 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 635 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 639 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 632 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 639 MB              ; 00:00:02                           ;
+; Total                     ; 00:01:51     ; --                      ; --                  ; 00:01:42                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; 2A145-05         ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; 2A145-05         ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; 2A145-05         ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; 2A145-05         ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; 2A145-05         ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; 2A145-05         ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; 2A145-05         ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; 2A145-05         ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; 2A145-05         ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Top_Model -c Top_Model
+quartus_fit --read_settings_files=off --write_settings_files=off Top_Model -c Top_Model
+quartus_asm --read_settings_files=off --write_settings_files=off Top_Model -c Top_Model
+quartus_sta Top_Model -c Top_Model
+quartus_eda --read_settings_files=off --write_settings_files=off Top_Model -c Top_Model
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off Top_Model -c Top_Model --vector_source=G:/DigitalDesignPrinc/DDP/DDP/LAB7/PARTC/Waveform.vwf --testbench_file=G:/DigitalDesignPrinc/DDP/DDP/LAB7/PARTC/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=G:/DigitalDesignPrinc/DDP/DDP/LAB7/PARTC/simulation/qsim/ Top_Model -c Top_Model
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off Top_Model -c Top_Model --vector_source=G:/DigitalDesignPrinc/DDP/DDP/LAB7/PARTC/Waveform.vwf --testbench_file=G:/DigitalDesignPrinc/DDP/DDP/LAB7/PARTC/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=G:/DigitalDesignPrinc/DDP/DDP/LAB7/PARTC/simulation/qsim/ Top_Model -c Top_Model
+
+
+
